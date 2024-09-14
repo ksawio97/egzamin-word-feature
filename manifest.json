@@ -1,0 +1,21 @@
+{
+    "manifest_version": 3,
+    "name": "Egzamin Word Feature",
+    "version": "1.0",
+    "description": "Adds features to egzaminword.pl page to save time",
+    "browser_specific_settings": {
+        "gecko": {
+            "id": "egzaminword-feature-ksawerykuczynskikk@gmail.com",
+            "strict_min_version": "48.0"
+        }
+    },
+    "permissions": [
+        "activeTab"
+    ],
+    "content_scripts": [
+        {
+        "matches": ["https://egzaminword.pl/egzamin/kategoria/*"],
+        "js": ["src/index.js"]
+        }
+    ]
+}
