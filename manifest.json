@@ -10,7 +10,8 @@
         }
     },
     "permissions": [
-        "activeTab"
+        "activeTab",
+        "speechSynthesis"
     ],
     "content_scripts": [
         {
